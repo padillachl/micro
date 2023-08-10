@@ -1,0 +1,25 @@
+
+
+# Establecer los parámetros
+precio_x = 20
+precio_y = 10
+ingreso = 100
+
+# Crear las coordenadas de los puntos del conjunto presupuestario original
+x_original = [0, 50]
+y_original = [0, 10]
+
+# Crear las coordenadas de los puntos del conjunto presupuestario con el impuesto
+x_impuesto = [0, 50]
+y_impuesto = [0, 10 - (precio_x * impuesto)]
+
+# Dibujar la gráfica
+plt.plot(x_original, y_original, color="blue")
+plt.plot(x_impuesto, y_impuesto, color="red")
+
+# Escribir las etiquetas de los ejes
+plt.xlabel("Cantidad de x")
+plt.ylabel("Cantidad de y")
+
+# Mostrar la gráfica
+plt.show()
